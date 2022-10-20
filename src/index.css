@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +9,94 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.container{
+  width: 100%;
+  padding: 0 50px;
+  max-width: 1400px;
+  min-width: 700px;
+  z-index: 1;
+}
+
+.main{
+  margin-top: 50px;
+  background: whitesmoke;
+  padding: 50px;
+  z-index: 1;
+}
+
+.main__list{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.main__select{
+  width: 250px;
+}
+
+.main__list__item{
+  width: 250px;
+}
+
+.company__modal{
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(33, 32, 33);
+  z-index: 3;
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  opacity: 99;
+}
+
+.company__modal div, .company__modal form{
+ width: auto;
+ height: auto;
+ padding: 20px 25px;
+ border-radius: 15px;
+ background: rgb(192, 211, 221);
+}
+
+.company__list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 50px;
+  padding: 0 30px;
+}
+
+.company, .bank{
+  width: 300px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.bank{
+  width: 400px;
+}
+.company__img{
+  width: 100%;
+  height: auto;
+}
+.company__name{
+  font-weight: 800;
+}
+
+.result__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
